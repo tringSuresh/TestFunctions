@@ -15,6 +15,8 @@
 		F92696351FE7997F00EA034F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92696331FE7997F00EA034F /* LaunchScreen.storyboard */; };
 		F92696401FE7997F00EA034F /* TestFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926963F1FE7997F00EA034F /* TestFunctionsTests.swift */; };
 		F926964B1FE7997F00EA034F /* TestFunctionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926964A1FE7997F00EA034F /* TestFunctionsUITests.swift */; };
+		F998F940204D108E0041AB46 /* StructClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998F93F204D108E0041AB46 /* StructClass.swift */; };
+		F998F944204D17B60041AB46 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F998F943204D17B60041AB46 /* login.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		F92696461FE7997F00EA034F /* TestFunctionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFunctionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F926964A1FE7997F00EA034F /* TestFunctionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFunctionsUITests.swift; sourceTree = "<group>"; };
 		F926964C1FE7997F00EA034F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F998F93F204D108E0041AB46 /* StructClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructClass.swift; sourceTree = "<group>"; };
+		F998F941204D13A30041AB46 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		F998F942204D13A40041AB46 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F998F943204D17B60041AB46 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
+		F998F945204D45440041AB46 /* TestFunctions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestFunctions.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +106,13 @@
 		F92696261FE7997F00EA034F /* TestFunctions */ = {
 			isa = PBXGroup;
 			children = (
+				F998F945204D45440041AB46 /* TestFunctions.entitlements */,
 				F92696271FE7997F00EA034F /* AppDelegate.swift */,
 				F92696291FE7997F00EA034F /* ViewController.swift */,
+				F998F93F204D108E0041AB46 /* StructClass.swift */,
 				F926962B1FE7997F00EA034F /* Main.storyboard */,
 				F92696311FE7997F00EA034F /* Assets.xcassets */,
+				F998F943204D17B60041AB46 /* login.jpg */,
 				F92696331FE7997F00EA034F /* LaunchScreen.storyboard */,
 				F92696361FE7997F00EA034F /* Info.plist */,
 				F926962E1FE7997F00EA034F /* TestFunctions.xcdatamodeld */,
@@ -197,6 +207,11 @@
 					F92696231FE7997F00EA034F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					F926963A1FE7997F00EA034F = {
 						CreatedOnToolsVersion = 9.2;
@@ -236,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92696351FE7997F00EA034F /* LaunchScreen.storyboard in Resources */,
+				F998F944204D17B60041AB46 /* login.jpg in Resources */,
 				F92696321FE7997F00EA034F /* Assets.xcassets in Resources */,
 				F926962D1FE7997F00EA034F /* Main.storyboard in Resources */,
 			);
@@ -265,6 +281,7 @@
 				F926962A1FE7997F00EA034F /* ViewController.swift in Sources */,
 				F92696281FE7997F00EA034F /* AppDelegate.swift in Sources */,
 				F92696301FE7997F00EA034F /* TestFunctions.xcdatamodeld in Sources */,
+				F998F940204D108E0041AB46 /* StructClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +321,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F926962C1FE7997F00EA034F /* Base */,
+				F998F941204D13A30041AB46 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -312,6 +330,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F92696341FE7997F00EA034F /* Base */,
+				F998F942204D13A40041AB46 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -323,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -430,8 +451,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestFunctions/TestFunctions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8739AQZ43Q;
 				INFOPLIST_FILE = TestFunctions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tringapps.TestFunctions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,8 +468,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestFunctions/TestFunctions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8739AQZ43Q;
 				INFOPLIST_FILE = TestFunctions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tringapps.TestFunctions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
