@@ -206,10 +206,10 @@
 				TargetAttributes = {
 					F92696231FE7997F00EA034F = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -451,14 +451,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TestFunctions/TestFunctions.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TringApps Inc. (8739AQZ43Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TringApps Inc. (8739AQZ43Q)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8739AQZ43Q;
 				INFOPLIST_FILE = TestFunctions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tringapps.TestFunctions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f1066485-d1ae-48a6-81f4-70d3ffbefd5f";
+				PROVISIONING_PROFILE_SPECIFIER = "ALL APP ADHOC PROFILE";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,14 +471,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TestFunctions/TestFunctions.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TringApps Inc. (8739AQZ43Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TringApps Inc. (8739AQZ43Q)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8739AQZ43Q;
 				INFOPLIST_FILE = TestFunctions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tringapps.TestFunctions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f1066485-d1ae-48a6-81f4-70d3ffbefd5f";
+				PROVISIONING_PROFILE_SPECIFIER = "ALL APP ADHOC PROFILE";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
