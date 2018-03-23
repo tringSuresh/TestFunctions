@@ -25,17 +25,35 @@
                                     <action selector="checkStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9LL-AF-eOg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is suresh from iOS Development targets....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lq-CY-gt6">
+                                <rect key="frame" x="5" y="237" width="365" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iM0-dI-MvV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Ge9-84-poi" firstAttribute="top" secondItem="6lq-CY-gt6" secondAttribute="bottom" constant="61.5" id="8jn-gh-lAb"/>
+                            <constraint firstItem="6lq-CY-gt6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X2p-Lh-k5B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6lq-CY-gt6" secondAttribute="trailing" constant="5" id="apm-wp-faJ"/>
+                            <constraint firstItem="6lq-CY-gt6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="gMc-EK-Q1n"/>
                             <constraint firstItem="Ge9-84-poi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kev-rm-GcU"/>
                             <constraint firstItem="Ge9-84-poi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uCr-4K-u6r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="marqueeLabel" destination="6lq-CY-gt6" id="LwK-48-Hv8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="102.99850074962519"/>
         </scene>
     </scenes>
 </document>
