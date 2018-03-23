@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var marqueeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.imageTypesEx()
+
+        UIView.animateKeyframes(withDuration: 5.0, delay: 0.0, options: [.repeat, .calculationModeLinear] , animations: {
+            self.marqueeLabel.frame = CGRect(x: self.view.frame.size.width, y: self.marqueeLabel.frame.origin.y, width: 0 - self.marqueeLabel.frame.size.width, height: self.marqueeLabel.frame.size.height)}, completion: nil)
         
+//        [UIView animateKeyframesWithDuration:5 delay:0 options:UIViewKeyframeAnimationOptionRepeat|UIViewAnimationOptionCurveLinear animations:^{
+//            //_mlabel is my created sample label
+//            } completion:nil];
+
     }
     
     func imageTypesEx() {
