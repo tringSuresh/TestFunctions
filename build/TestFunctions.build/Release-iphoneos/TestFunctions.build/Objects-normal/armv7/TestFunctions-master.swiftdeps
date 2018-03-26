@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "352a5e91f210145d40dcf62f758a1fd5"
-build_time: [1521798759, 91130000]
-inputs:
-  "/Users/suresh/Library/My Workspace/Suresh System Backup/Workspace/Suresh R/TestFunctions 2/TestFunctions/ViewController.swift": [9223372036, 854775807]
-  "/Users/suresh/Library/My Workspace/Suresh System Backup/Workspace/Suresh R/TestFunctions 2/TestFunctions/AppDelegate.swift": [9223372036, 854775807]
-  "/Users/suresh/Library/My Workspace/Suresh System Backup/Workspace/Suresh R/TestFunctions 2/TestFunctions/StructClass.swift": [9223372036, 854775807]
