@@ -30,7 +30,6 @@
 		F998F941204D13A30041AB46 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		F998F942204D13A40041AB46 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F998F943204D17B60041AB46 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
-		F998F945204D45440041AB46 /* TestFunctions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestFunctions.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +62,6 @@
 		F92696261FE7997F00EA034F /* TestFunctions */ = {
 			isa = PBXGroup;
 			children = (
-				F998F945204D45440041AB46 /* TestFunctions.entitlements */,
 				F92696271FE7997F00EA034F /* AppDelegate.swift */,
 				F92696291FE7997F00EA034F /* ViewController.swift */,
 				F998F93F204D108E0041AB46 /* StructClass.swift */,
@@ -111,6 +109,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.SafariKeychain = {
 								enabled = 0;
 							};
