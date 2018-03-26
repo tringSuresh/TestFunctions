@@ -42,7 +42,6 @@ class ViewController: UIViewController {
         
         //Program 1
         print(self.testFunctions(21))
-        
         //Program 2
         self.callGeneric()
         
